@@ -29,17 +29,18 @@ nav{
     margin: 0;
 }
 
-.navText{
-    
+.navText,.navItem{
+    padding: 9px;
+    margin: 0;
     font-size: 17px;
     text-align: center;
-    
     background-color: transparent;
     color: rgb(185, 158, 112)
 }
 
 .dropdown {
     float: left;
+    padding: 0px;
 }
 
 .tratDropdown {
@@ -116,3 +117,48 @@ nav a:hover, .dropdown:hover .dropbtn {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-7px, -8px);
 }
+
+/*Termina header*/
+
+/*Main*/
+
+/*Tratamentos*/
+#trat *{
+    margin: 0;
+    padding:0px;
+}
+
+
+
+.tratH, .tabH.active{
+    background-color: rgb(70, 171, 238);
+}
+
+.tratS, .tabS.active{
+    background-color: pink;
+}
+.tratS ul, .tratH ul{
+    list-style: none;
+}
+
+.tab button{
+    margin: 0;
+    border: 0;
+    background-color:transparent
+}
+
+.tab button:hover{
+    background-color: black;
+}
+
+.tratH{
+    display:none;
+}
+
+.tratS{
+    display:block;
+}
+/*Promocoes*/
+/*Testemunhos*/
+/*Agendar*/
+/*Contactos*/

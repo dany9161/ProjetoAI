@@ -1,0 +1,18 @@
+pagina principal:
+	serviços(separa por H e M, com base no depilperfect)
+		H:
+			
+		M:
+
+	promoções
+	opiniões de clientes (incluir google maps)
+	agendar sessão(formulario)
+	Contactos/localização
+	
+	
+
+uma pagina com mais detalhes sobre cada tratamento
+A que sexo é feito
+o que se faz
+como se faz
+formulario para marcar/saber mais

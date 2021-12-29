@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belezza</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="setUp()" onresize="resize()">
+
+    <header>
+        <a href="index.html" class="icon">
+            <img src="imgs/Icons_Nadiya-01.png" alt="">
+        </a>
+
+        <!-- Icon para o menu responsivo-->
+        <div class="container" onclick="toggleMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <nav>
+            <div class="dropdown navItem">
+                <a href="#" class="navText">Tratamentos</a>
+                <div class="tratDropdown">
+                    <a href="#tratamentoS" class="tratS">Senhora</a>
+                    <a href="#tratamentoS" class="tratH">Homem</a>
+                </div>
+            </div> 
+
+            <a href="#news" class="navText navItem">Promo&ccedil;&otilde;es</a>
+            <a href="#about" class="navText navItem">Testemunhos</a>
+            <a href="#about" class="navText navItem">Agendar</a>
+            <a href="#contact" class="navText navItem">Contactos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Tratamentos"></section>
+        <section id="Promocoes"></section>
+        <section id="Contactos"></section>
+
+        <section class="todo" style="background-color: silver; color:green">
+            <h1>TODO</h1>
+            <ul>
+                <li>Ver o titulo da pagina</li>
+                <li>Mudar a cor do header</li>
+                <li>Mudar a cor do menu</li>
+                <li>Quando é feito scroll continuar a mostrar o header(position:fixed) e transformar o logo no nome da empresa</li>
+            </ul>
+        </section><!-- /todo -->
+    </main>
+</body>
+</html>

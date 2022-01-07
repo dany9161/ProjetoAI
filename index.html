@@ -13,7 +13,7 @@
 
     <header>
         <a href="index.html" class="icon">
-            <img src="imgs/Icons_Nadiya-01.png" alt="Logotipo Belezza Estetica" width="100px"> </button>
+            <img src="imgs/Logo_EST-BELEZZA-03.png" alt="Logotipo Belezza Estetica" width="200px"> </button>
         </a>
 
         <!-- Icon para o menu responsivo-->
@@ -25,43 +25,72 @@
 
         <nav>
             <div class="dropdown navItem">
-                <a href="#trat" class="  navText">Tratamentos</a>
+                <a href="#trat" class="navText">Tratamentos</a>
                 <div class="tratDropdown">
-                    <a href="#tratamentoS" class="tratS">Senhora</a>
-                    <a href="#tratamentoS" class="tratH">Homem</a>
+                    <a href="#trat" class="tratS">Senhora</a>
+                    <a href="#trat" class="tratH">Homem</a>
                 </div>
             </div> 
 
             <a href="#promo" class="navText navItem">Promo&ccedil;&otilde;es</a>
-            <a href="#test" class="navText navItem">Testemunhos</a>
             <a href="#agendar" class="navText navItem">Agendar</a>
             <a href="#cont" class="navText navItem">Contactos</a>
         </nav>
     </header>
 
     <main>
+        <section id="slideShow">
+            <img src="imgs/Banner1.png" class="slideShowContent"/>
+        </section>
         <section id="trat"><!-- Tratamentos -->
             <div class="tab">
                 <button class="tablinks tabS active" onclick="showTratS()"><img src="imgs/Icons_Nadiya-11.png" alt="tratamento Senhora" width="100px"> </button>
                 <button class="tablinks tabH" onclick="showTratH()"><img src="imgs/Icons_Nadiya-06.png" alt="tratamento Homem" width="100px"> </button>
             </div>
+
             <div class="tratS">
-                <ul>
-                    <li>Depilação a laser</li>
-                    <li>Depilação a cera</li>
-                    <li>Tratamento de unhas</li>
-                    <li>Tratamento de pele</li>
-                    <li>Tratar gurdura</li>
-                    <li>Tratar celulite</li>
-                </ul>
+                <div class="uniTrat">
+                        <div class="trattexto">Depila&ccedil;&atilde;o a laser<br><a href="">Saber mais</a></div> 
+                        <img src="imgs/imag2.png" alt="Imagem Depila&ccedil;&atilde;o a laser" width="150">
+                </div>
+
+                <div class="uniTrat">
+                    <div class="trattexto">Tratamento de Corpo<br><a href="">Saber mais</a></div>
+                    <img src="imgs/imag7.png" alt="Imagem Tratamento de Corpo" width="150">
+                </div>
+                
+                <div class="uniTrat">
+                    <div class="trattexto">Tratamento de Rosto<br><a href="">Saber mais</a></div>
+                    <img src="imgs/imag1.png" alt="Imagem Tratamento de Rosto" width="150">
+                        
+                </div>
+
+                <div class="uniTrat">
+                    <div class="trattexto">Massagem<br><a href="">Saber mais</a></div>
+                    <img src="imgs/imag3.png" alt="Imagem Massagem" width="150">
+                </div>    
             </div>
+
             <div class="tratH">
-                <ul>
-                    <li>Depilaçao laser</li>
-                    <li>Depilação a laser</li>
-                    <li>Depilaçao ao peito</li>
-                    <li>Tratamento de pele</li>
-                </ul>
+                <div class="uniTrat">
+                    <div class="trattexto">Depila&ccedil;&atilde;o a laser<br><a href="">Saber mais</a></div> 
+                    <img src="imgs/imag7.png" alt="Imagem Depila&ccedil;&atilde;o a laser" width="150">
+                </div>
+
+                <div class="uniTrat">
+                    <div class="trattexto">Tratamento de Corpo<br><a href="">Saber mais</a></div>
+                    <img src="imgs/imag5.png" alt="Imagem Tratamento de Corpo" width="150">
+                </div>
+                
+                <div class="uniTrat">
+                    <div class="trattexto">Tratamento de Rosto<br><a href="">Saber mais</a></div>
+                    <img src="imgs/imag4.png" alt="Imagem Tratamento de Rosto" width="150">
+                </div>
+
+                <div class="uniTrat">
+                    <div class="trattexto">Massagem<br><a href="">Saber mais</a></div>
+                    <img src="imgs/imag6.png" alt="Imagem Massagem" width="150">
+                </div>
             </div>
         </section><!-- /Tratamentos -->
 
@@ -81,13 +110,17 @@
 
         </section><!-- /Contactos -->
 
-        <section class="todo" style="background-color: silver; color:green">
+        <section class="todo" style="background-color: silver; color:green ; padding: 20px;">
             <h1>TODO</h1>
             <ul>
                 <li>Ver o titulo da pagina</li>
                 <li>Mudar a cor do header</li>
                 <li>Mudar a cor do menu</li>
-                <li>Quando é feito scroll continuar a mostrar o header(position:fixed) e transformar o logo no nome da empresa</li>
+                <li>Mara, fazer imagens para ecrans grandes(computador),medios e pequenos(smartphone)</li>
+                <li>Tirar o setTimeout da função setUp() para o slide show rodar</li>
+                <li>Alterar o tempo que muda a imagem</li>
+                <li>Fazer as paginas para os tratamentos epor o link</li>
+                <li>CSS: No main: Mudar para o tamanho das fotos em cada tipo de ecra</li>
             </ul>
         </section><!-- /todo -->
     </main>

@@ -5,9 +5,14 @@ a{
 }
 
 header{
-    background-color: pink;
     display: inline-block;
     width: 100%;
+    border-bottom: 2px solid purple;
+    padding: 10px;
+}
+
+header a img{
+   
 }
 
 header .icon {
@@ -15,6 +20,7 @@ header .icon {
 }
 
 nav{
+    position: absolute;
     float: right;
     padding-top: 14px;
     margin-right: 5px;
@@ -119,6 +125,10 @@ nav a:hover, .dropdown:hover .dropbtn {
 }
 
 /*Termina header*/
+/*SlideShow*/
+.slideShow{
+    margin: 0 auto;
+}
 
 /*Main*/
 
@@ -128,13 +138,11 @@ nav a:hover, .dropdown:hover .dropbtn {
     padding:0px;
 }
 
-
-
-.tratH, .tabH.active{
+.tratH, .tabH.active , .tabH.active:hover{
     background-color: rgb(70, 171, 238);
 }
 
-.tratS, .tabS.active{
+.tratS, .tabS.active, .tabS.active:hover{
     background-color: pink;
 }
 .tratS ul, .tratH ul{

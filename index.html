@@ -27,8 +27,8 @@
             <div class="dropdown navItem">
                 <a href="#trat" class="navText">Tratamentos</a>
                 <div class="tratDropdown">
-                    <a href="#trat" class="tratS">Senhora</a>
-                    <a href="#trat" class="tratH">Homem</a>
+                    <a href="#trat" class="tratHeaderS">Senhora</a>
+                    <a href="#trat" class="tratHeaderH">Homem</a>
                 </div>
             </div> 
 
@@ -40,8 +40,11 @@
 
     <main>
         <section id="slideShow">
-            <img src="imgs/Banner1.png" class="slideShowContent"/>
-        </section>
+            <div class="slide-container">
+                <img src="imgs/Banner1.png" class="slideShowContent"/>
+            </div>
+            </section>
+
         <section id="trat"><!-- Tratamentos -->
             <div class="tab">
                 <button class="tablinks tabS active" onclick="showTratS()"><img src="imgs/Icons_Nadiya-11.png" alt="tratamento Senhora" width="100px"> </button>
@@ -49,57 +52,86 @@
             </div>
 
             <div class="tratS">
-                <div class="uniTrat">
-                        <div class="trattexto">Depila&ccedil;&atilde;o a laser<br><a href="">Saber mais</a></div> 
-                        <img src="imgs/imag2.png" alt="Imagem Depila&ccedil;&atilde;o a laser" width="150">
-                </div>
+                    <div class="uniTrat">
+                            <div class="trattexto" onclick="saberMais('Depilação a laser',0,'imag2.png')">Depila&ccedil;&atilde;o a laser<br><a href="trat.html" >Saber mais</a></div> 
+                            <img src="imgs/imag2.png" alt="Imagem Depila&ccedil;&atilde;o a laser" width="150">
+                    </div>
 
-                <div class="uniTrat">
-                    <div class="trattexto">Tratamento de Corpo<br><a href="">Saber mais</a></div>
-                    <img src="imgs/imag4.webp" alt="Imagem Tratamento de Corpo" width="150">
-                </div>
-                
-                <div class="uniTrat">
-                    <div class="trattexto">Tratamento de Rosto<br><a href="">Saber mais</a></div>
-                    <img src="imgs/imag1.png" alt="Imagem Tratamento de Rosto" width="150">
-                        
-                </div>
+                    <div class="uniTrat">
+                        <div class="trattexto" onclick="saberMais('Tratamento do corpo',1,'imag4.webp')">Tratamento de Corpo<br><a href="trat.html">Saber mais</a></div>
+                        <img src="imgs/imag4.webp" alt="Imagem Tratamento de Corpo" width="150">
+                    </div>
+                    
+                    <div class="uniTrat">
+                        <div class="trattexto" onclick="saberMais('Tratamento de Rosto',2,'imag1.png')">Tratamento de Rosto<br><a href="trat.html">Saber mais</a></div>
+                        <img src="imgs/imag1.png" alt="Imagem Tratamento de Rosto" width="150">  
+                    </div>
 
-                <div class="uniTrat">
-                    <div class="trattexto">Massagem<br><a href="">Saber mais</a></div>
-                    <img src="imgs/imag3.png" alt="Imagem Massagem" width="150">
-                </div>    
+                    <div class="uniTrat">
+                        <div class="trattexto" onclick="saberMais('Massagem',3,'imag3.png')">Massagem<br><a href="trat.html">Saber mais</a></div>
+                        <img src="imgs/imag3.png" alt="Imagem Massagem" width="150">
+                    </div>
             </div>
 
             <div class="tratH">
                 <div class="uniTrat">
-                    <div class="trattexto">Depila&ccedil;&atilde;o a laser<br><a href="">Saber mais</a></div> 
+                    <div class="trattexto" onclick="saberMais('Depilação a laser',0,'imag5.png')">Depila&ccedil;&atilde;o a laser<br><a href="trat.html">Saber mais</a></div> 
                     <img src="imgs/imag5.png" alt="Imagem Depila&ccedil;&atilde;o a laser" width="150">
                 </div>
 
                 <div class="uniTrat">
-                    <div class="trattexto">Tratamento de Corpo<br><a href="">Saber mais</a></div>
+                    <div class="trattexto" onclick="saberMais('Tratamento de Corpo',1,'imag8.png')">Tratamento de Corpo<br><a href="trat.html">Saber mais</a></div>
                     <img src="imgs/imag8.png" alt="Imagem Tratamento de Corpo" width="150">
                 </div>
                 
                 <div class="uniTrat">
-                    <div class="trattexto">Tratamento de Rosto<br><a href="">Saber mais</a></div>
+                    <div class="trattexto" onclick="saberMais('Tratamento de Rosto',2,'imag6.png')">Tratamento de Rosto<br><a href="trat.html">Saber mais</a></div>
                     <img src="imgs/imag6.png" alt="Imagem Tratamento de Rosto" width="150">
                 </div>
 
                 <div class="uniTrat">
-                    <div class="trattexto">Massagem<br><a href="">Saber mais</a></div>
+                    <div class="trattexto" onclick="saberMais('Massagem',3,'imag7.png')">Massagem<br><a href="trat.html">Saber mais</a></div>
                     <img src="imgs/imag7.png" alt="Imagem Massagem" width="150">
                 </div>
             </div>
         </section><!-- /Tratamentos -->
 
         <section id="promo"><!-- /Pormocoes -->
+            <div class="promoBackground">
+                <h1>Promo&ccedil&otildees</h1>
+                <div class="promo">
+                    <p>Promo 1</p>
+                    <p>De hoje até amanha</p>
+                    <p>Depilamos 1 perna gratis</p>
+                    <p>2 pernas ao preço de 3</p>
+                </div>
+                <div class="promo">
+                    <p>Meias baiona da ponta dos pes até à ponta da Co... Comprem minhas senhoras, comprem!</p>
+                </div>
 
+            </div>
         </section><!-- /Pormocoes -->
 
         <section id="test"><!-- Testemunhos -->
-
+            
+            <div class="content">
+                <h1>Sobre os nossos tratamentos</h1>
+                <div class="test">
+                    <div class="testemunho">
+                        <p>A experiencia de cura mental e espiriyual, permitem que a sua mente liberte o stress e a ansiedade, e permitem ainda um sentido renovado de energia e bem-estar emocional, para elevar o seu espirito.
+                        <p><b>Massagens</b>, Belezza Zen </p>
+                    </div>
+                    <div class="testemunho">
+                        <p>Mais do que um ideal de beleza, a depilação é hoje em dia tambem uma preocupação para muitas pessoas- pèlos em excesso, além de inéstetico, favorecem a proliferação de germes causando oodor desagradavel e até irritação e prurido.
+                        <p><b>Depilação</b>, Laser Diodo </p>
+                    </div>
+                    <div class="testemunho">
+                        <p>Exercicio fisico e um alimentação cuidad são bases fundamentais para uma vida saudavel. Os tratamentos de corpo completam esta receita e ajudam a corrigir alguns erros cometidos no passado
+                        <p><b>Tratamentos de Corpo</b>, Cavitação</p>
+                    </div>
+                </div>
+                
+            </div>
         </section><!-- /Testemunhos -->
 
         <section id="agendar"><!-- /Agendar -->
@@ -107,7 +139,49 @@
         </section><!-- /Agendar -->
 
         <section id="cont"><!-- Contactos -->
+            <div class="contBackground">
+                <h1>Venha-nos visitar</h1>
+                <div class="textContatos">
+                    <table>
+                        <tr>
+                            <a href="https://www.google.com/maps/dir//40.6666538,-7.9194366/@40.6668074,-7.9192479,18z/data=!4m2!4m1!3e0" title="Abrir no google maps">        
+                                <div class="contMorada">
+                            <td><img src="imgs/Icons_Nadiya-04.png" alt="Icon Morada" width="50"></td>
+                            <td><p>Quinta das Fontainhas lote 44R C.B. 3510-224 Viseu (Atrás do Tribunal Novo)</p></td>
+                             </div>
+                        </a>
+                        </tr>
+                    </table>
+                    <a href="https://www.google.com/maps/dir//40.6666538,-7.9194366/@40.6668074,-7.9192479,18z/data=!4m2!4m1!3e0" title="Abrir no google maps">
+                        
+                            
+                            
+                        </div>
+                    </a>
 
+                    <a href="mailto:geral.belezzaestetica@gmail.com" title="Enviar email">
+                        <div class="contEmail">
+                            <img src="imgs/Icons_Nadiya-02.png" alt="Icon Email" width="50">
+                            
+                            <p title="Enviar email">geral.belezzaestetica@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <a href="tel:+351918429619" title="Ligar">
+                        <div class="contTelef">
+                            <img src="imgs/Icons_Nadiya-05.png" alt="Icon Telefone" width="50">
+                            <p>Tel: 918 429 619</p>
+                        </div>
+                    </a>
+
+                    <div class="contHor">
+                        <img src="imgs/Icons_Nadiya-05.png" alt="Icon Horario" width="50">
+                        <p>HORÁRIO DE FUNCIONAMENTO<br>Terça - Sexta: 10:00 - 19:00Sábado: 09:00 - 18:00</p>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d756.5829799414211!2d-7.919985170750885!3d40.6666550159549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb4ff8d3df6ae0b1!2zNDDCsDM5JzYwLjAiTiA3wrA1NScxMC4wIlc!5e0!3m2!1spt-PT!2spt!4v1641936508688!5m2!1spt-PT!2spt" allowfullscreen="" loading="lazy"></iframe>
+                
+            </div>
         </section><!-- /Contactos -->
 
         <section class="todo" style="background-color: silver; color:green ; padding: 20px;">
@@ -119,8 +193,12 @@
                 <li>Mara, fazer imagens para ecrans grandes(computador),medios e pequenos(smartphone)</li>
                 <li>Tirar o setTimeout da função setUp() para o slide show rodar</li>
                 <li>Alterar o tempo que muda a imagem</li>
-                <li>Fazer as paginas para os tratamentos epor o link</li>
                 <li>CSS: No main: Mudar para o tamanho das fotos em cada tipo de ecra</li>
+                <li>Ver o texto sobre os tratamentos</li>
+                <li>Nos tratemnetos com o ecran pequeno, ver o design</li>
+                <li>Na pagina dos tratamentos, se clicarmos no dropdown para os tratamentos de homem a tab não está aberta <br>fix: Não por o dropdown</li>
+                <li>Mudar a font-family das promoções e contactos</li>
+                <li>Nos contactos por o link para o google maps na morada</li>
             </ul>
         </section><!-- /todo -->
     </main>

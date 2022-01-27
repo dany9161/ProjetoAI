@@ -131,19 +131,39 @@ nav a:hover, .dropdown:hover .dropbtn {
 
 /*Termina header*/
 /*SlideShow*/
+#slideShow {
+   width: 100%;
+}
 
+.slide-container {
+    width: 80%;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#slideShow img{
+    float: right;
+}
+
+.centerBanner{
+   float: none;
+   margin: 0px auto;
+   width: 900px; 
+}
 /*Main*/
 main{
-    margin: auto;
-    width: 60%; /*Mudar para o tamanho das fotos em cada tipo de ecra*/
+    /*Mudar para o tamanho das fotos em cada tipo de ecra*/
     margin-top: -4px;
 }
 
 /*Tratamentos*/
 #trat{
+    margin: auto;
+    width: 60%;
     margin-top: -5px;
     padding:0px;
-    
+    padding-bottom: 50px;
 }
 
 .tab{
@@ -173,17 +193,19 @@ main{
     display:none;
 }
 
+
+
 .tratS{
     width:100%;
     display:inline-block;
-    
+    padding : 0px auto;
 }
 
-.tratH, .tabH.active , .tabH.active:hover{
+.tratH .uniTrat, .tabH.active , .tabH.active:hover, .tratHeaderH{
     background-color: rgb(70, 171, 238);
 }
 
-.tratS, .tabS.active, .tabS.active:hover{
+.tratS .uniTrat, .tabS.active, .tabS.active:hover,.tratHeaderS{
     background-color: pink;
 }
 .tratS ul, .tratH ul{
@@ -192,18 +214,107 @@ main{
 
 .uniTrat{
     float: left;
-    border-right: 1px solid white;
-    border-bottom:  1px solid white;
-    border-left:  1px solid white;
+    border: 1px solid white;
+    border-top: 0px;
     height: 190px;
+    width: 165px;
     text-align: center;
     padding: 20px;
 }
 
-
-
-
 /*Promocoes*/
+#promo,#cont{
+    padding: 50px 0px;
+    background-image: url("imgs/d6o2o85-f72a8e71-a764-4c72-a640-a39adb56ccf1.gif");
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.promoBackground h1{
+    color:white;
+    text-align:center;
+    margin-bottom: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.promoBackground,.contBackground{
+    background-color: black;
+    width:60%;
+    margin: 0px auto;
+    padding: 20px 0px;
+}
+
+.promo{
+    color: white;
+    margin: 40px 40px;
+    font-family:fantasy;
+}
+
 /*Testemunhos*/
+#test{
+    margin-bottom: 50px;
+    padding: 20px 0;
+    margin: auto;
+    width: 60%;
+}
+
+#test .content{
+    width: 100%;
+}
+
+#test .content h1{
+   text-align: center;
+}
+
+#test .content .test{
+    display: inline-block;
+}
+
+#test .content .test .testemunho{
+    width: 165px;
+    float: left;
+    margin: 10px;
+    text-align:justify;
+    border: 3px dashed darkslateblue;
+    padding: 5px;
+}
+
 /*Agendar*/
+
+
 /*Contactos*/
+.contMorada,.contEmail,.contTelef,.contHor{
+    display: inline-block;
+    width:92%;
+    margin: 5px 4%;
+}
+
+#cont h1{
+    color:white;
+    text-align:center;
+    margin-bottom: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contMorada *, .contEmail *, .contTelef *,.contHor *{
+    float: left;
+    vertical-align: middle;
+}
+
+.contMorada p, .contEmail p, .contTelef p,.contHor p{
+    color:white;
+    padding-left: 2%;
+}
+
+iframe {
+    margin: 30px 3%;
+    width: 95%;
+    height: 400px;
+    border:0;
+}
+
+/*PAGINA TRATAMENTOS*/
+.tratImagem{
+    float:left;
+}
